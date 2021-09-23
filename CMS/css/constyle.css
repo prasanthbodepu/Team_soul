@@ -1,0 +1,172 @@
+
+footer{
+	padding-top: 10px;
+	text-align: center;
+	background-color: transparent;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+
+}
+
+.header h2{
+	list-style: none;
+	text-decoration : none;
+	color: red;
+}
+
+.header h2 a :hover {
+	text-decoration-style: none;
+}
+
+
+*{
+	height: auto;
+	box-sizing:  border-box;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+section{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	min-height: 85vh;
+	background-color: #1345c2;
+}
+
+section :: before{
+	content: '';
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: red;
+}
+
+section .container {
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+	background-color: white;
+}
+
+section .container .contactinfo {
+	position: relative;
+	top: 40px;
+	width: 350px;
+	height: calc(100% - 80px);
+	background-color: #1cd5ed;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+
+section .container .contactinfo h2 {
+	color: #fff;
+	font-size:  24px;
+	font-weight: 500;
+
+}
+
+section .container .contactinfo .info {
+	position: relative;
+	margin: 20px 0;
+}
+
+section .container .contactinfo li {
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+section .container .contactinfo .info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+
+section .container .contactinfo .info li span:nth-child(2){
+	color: #fff;
+	margin-left: 10px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+section .container .contactinfo .info li:hover span:nth-child(2),
+section .container .contactinfo .info li:hover span:nth-child(1){
+	opacity: 1;
+}
+
+section .container .contactinfo .sci {
+	position: relative;
+	display: flex;
+}
+
+section .container .contactinfo .sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+
+section .container .contactinfo .sci li a{
+	text-decoration: none;
+}
+
+section .container .contactForm {
+	position: absolute;
+	padding: 70px 50px;
+	background-color: #fff;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: cal(100% - 150px);
+	height: 100%;
+	box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+
+section .container .contactForm h2 {
+
+	color: #0f3959;
+	font-size: 24px;
+	font-weight: 500;
+
+}
+
+section .container .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+section .container .contactForm .formBox .inputBox {
+	position: relative;
+	margin: 0 0 35px 0;
+}
+
+section .container .contactForm .formBox .inputBox.w50{
+	width : 100%;
+}
+
+.row{
+	width: 780px;
+	padding-top: 25px;
+
+}

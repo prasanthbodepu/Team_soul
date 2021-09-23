@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up | Sign In</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+
+    
+</head>
+<body style="background: linear-gradient(-135deg, #2e9cf0, #0f48ab);">
+
+	<a href="index.html"><h2 style="float: left;padding-right: 600px; color :white">Complaint Management System</h2></a>
+	<h3>User Registration and Login</h3>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			
+			<span></span>
+			<input type="text" class="form-control" placeholder="Full Name" name="fullname" required="required" autofocus>
+		         
+		            <input type="email" class="form-control" placeholder="Email ID" id="email" onBlur="userAvailability()" name="email" required="required">
+		             <span id="user-availability-status1" style="font-size:12px;"></span>
+		
+		            <input type="password" class="form-control" placeholder="Password" required="required" name="password">
+		            
+		             <input type="text" class="form-control" maxlength="10" name="contactno" placeholder="Contact no" required="required" autofocus>
+		     
+		            
+		            <button class="btn btn-theme btn-block"  type="submit" name="submit" id="submit"><i class="fa fa-user"></i> Register</button>
+		            <hr>
+		            
+		            <div class="registration">
+		                Already Registered<br/>
+		                <a class="" href="user.html">
+		                   Sign in
+		                </a>
+		            </div>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<span></span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To raise complaint create an account with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, User!</h1>
+				<p>Login to raise complaint</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="container1" style="background-color: transparent;">
+         <p>Designed and Developed by <a href = "team.html"> Team-GhostRiders</a></p>
+  </footer> 
+
+
+<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
